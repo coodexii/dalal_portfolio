@@ -6,7 +6,7 @@
 
 ## 🖥️ Live Demo
 
-[View Portfolio →](https://coodexii.github.io/dalal_portfolio.)
+[View Portfolio →](https://coodexii.github.io/dalal_portfolio/)
 
 ---
 
