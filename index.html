@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCoder | Junior Frontend Developer</title>
+    <meta name="description" content="Portfolio of DCoder, a Junior Frontend Developer specializing in HTML, CSS, and JavaScript.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="scanlines"></div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-bracket">[</span>DCoder<span class="logo-dot">_</span><span class="logo-bracket">]</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-en="about" data-ar="عني">about</a>
+                <a href="#skills" class="nav-link" data-en="skills" data-ar="مهارات">skills</a>
+                <a href="#projects" class="nav-link" data-en="work" data-ar="أعمال">work</a>
+                <a href="#contact" class="nav-link" data-en="contact" data-ar="تواصل">contact</a>
+            </div>
+            <div class="nav-controls">
+                <button id="lang-toggle" class="btn-icon" aria-label="Switch Language">
+                    <span class="lang-text">AR</span>
+                </button>
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+                    <i class="fas fa-circle-half-stroke"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-eyebrow">
+                    <span class="prompt">$ </span><span class="typed-text" id="typed"></span><span class="cursor-blink">▌</span>
+                </div>
+                <h1 class="hero-title glitch" data-text="DCoder" data-en="Hi I'm DCoder" data-ar="مرحباً، أنا DCoder">
+                    Hi I'm <em>DCoder</em>
+                </h1>
+                <h2 class="hero-subtitle" data-en="Junior Frontend Developer" data-ar="مطور واجهات أمامية مبتدئ">
+                    Junior Frontend Developer
+                </h2>
+                <div class="hero-meta">
+                    <span class="tag">#HTML</span>
+                    <span class="tag">#CSS</span>
+                    <span class="tag">#JavaScript</span>
+                    <span class="tag">#OpenToWork</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary" data-en="View Projects" data-ar="عرض المشاريع">
+                        <span class="btn-arrow">→</span> View Projects
+                    </a>
+                    <a href="https://raw.githubusercontent.com/coodexii/Portfolio./main/CV.pdf" target="_blank" class="btn btn-ghost" data-en="Download CV" data-ar="تحميل السيرة الذاتية">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="code-block">
+                    <div class="code-line"><span class="kw">const</span> dev <span class="op">=</span> {</div>
+                    <div class="code-line pl">name: <span class="str">"DCoder"</span>,</div>
+                    <div class="code-line pl">role: <span class="str">"Frontend Dev"</span>,</div>
+                    <div class="code-line pl">status: <span class="str">"available"</span>,</div>
+                    <div class="code-line pl">passion: <span class="str">"building UIs"</span></div>
+                    <div class="code-line">}</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">01.</span>
+                    <h2 class="section-title" data-en="About Me" data-ar="عني">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text-block">
+                        <p class="about-text" data-en="Junior Frontend Developer with hands-on experience building responsive web interfaces using HTML, CSS, and JavaScript. Passionate about learning, building real-world projects, and improving user experience. Looking for an internship or entry-level opportunity to grow my skills." data-ar="مطور واجهات أمامية مبتدئ ذو خبرة عملية في بناء واجهات ويب متجاوبة باستخدام HTML و CSS و JavaScript. شغوف بالتعلم وبناء مشاريع واقعية وتحسين تجربة المستخدم. أبحث عن فرصة تدريب أو وظيفة مبتدأ لتطوير مهاراتي.">
+                            Junior Frontend Developer with hands-on experience building responsive web interfaces using HTML, CSS, and JavaScript. Passionate about learning, building real-world projects, and improving user experience. Looking for an internship or entry-level opportunity to grow my skills.
+                        </p>
+                        <div class="edu-inline">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span data-en="Programming and Computer Science — Graduated" data-ar="برمجة وعلوم حاسب — خريج">
+                                Programming and Computer Science — Graduated
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="terminal-window">
+                            <div class="terminal-bar">
+                                <span class="t-dot red"></span>
+                                <span class="t-dot yellow"></span>
+                                <span class="t-dot green"></span>
+                                <span class="t-title">dcoder.sh</span>
+                            </div>
+                            <div class="terminal-body">
+                                <p><span class="t-green">✓</span> HTML / CSS</p>
+                                <p><span class="t-green">✓</span> JavaScript</p>
+                                <p><span class="t-green">✓</span> Git & GitHub</p>
+                                <p><span class="t-green">✓</span> Responsive Design</p>
+                                <p><span class="t-amber">~</span> UI/UX Basics</p>
+                                <p><span class="t-amber">~</span> Problem Solving</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">02.</span>
+                    <h2 class="section-title" data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <span class="skill-name">Git & Github</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <span class="skill-name" data-en="Basic UI/UX" data-ar="أساسيات UI/UX">Basic UI/UX</span>
+                        <span class="skill-level">Basic</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-brain"></i>
+                        <span class="skill-name" data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</span>
+                        <span class="skill-level">Growing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">03.</span>
+                    <h2 class="section-title" data-en="Projects" data-ar="المشاريع">Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-num">001</span>
+                            <div class="project-icon-wrap"><i class="fas fa-calculator"></i></div>
+                        </div>
+                        <h3 class="project-name" data-en="Calculator" data-ar="الآلة الحاسبة">Calculator</h3>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://coodexii.github.io/calculator-project/" target="_blank" class="proj-link">
+                                <i class="fas fa-arrow-up-right-from-square"></i> Live
+                            </a>
+                            <a href="https://github.com/coodexii/calculator-project" target="_blank" class="proj-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-num">002</span>
+                            <div class="project-icon-wrap"><i class="fas fa-cloud-sun"></i></div>
+                        </div>
+                        <h3 class="project-name" data-en="Weather Dashboard" data-ar="لوحة الطقس">Weather Dashboard</h3>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://coodexii.github.io/weatherDashboard-project/" target="_blank" class="proj-link">
+                                <i class="fas fa-arrow-up-right-from-square"></i> Live
+                            </a>
+                            <a href="https://github.com/coodexii/weatherDashboard-project" target="_blank" class="proj-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-num">003</span>
+                            <div class="project-icon-wrap"><i class="fas fa-list-check"></i></div>
+                        </div>
+                        <h3 class="project-name" data-en="To-Do List" data-ar="قائمة المهام">To-Do List</h3>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://coodexii.github.io/To-DO-List/" target="_blank" class="proj-link">
+                                <i class="fas fa-arrow-up-right-from-square"></i> Live
+                            </a>
+                            <a href="https://github.com/coodexii/To-DO-List" target="_blank" class="proj-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">04.</span>
+                    <h2 class="section-title" data-en="Contact Me" data-ar="تواصل معي">Contact Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-layout">
+                    <div class="contact-left">
+                        <p class="contact-intro" data-en="Open to internships and entry-level opportunities. Let's build something together." data-ar="متاح للتدريب والوظائف المبتدئة. لنبني شيئاً معاً.">
+                            Open to internships and entry-level opportunities. Let's build something together.
+                        </p>
+                        <div class="social-links">
+                            <a href="https://github.com/coodexii" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i><span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i><span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                            <div class="input-group">
+                                <label data-en="Name" data-ar="الاسم">Name</label>
+                                <input type="text" name="name" required data-placeholder-en="Your name" data-placeholder-ar="اسمك" placeholder="Your name">
+                            </div>
+                            <div class="input-group">
+                                <label data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                                <input type="email" name="email" required data-placeholder-en="your@email.com" data-placeholder-ar="بريدك@example.com" placeholder="your@email.com">
+                            </div>
+                            <div class="input-group">
+                                <label data-en="Message" data-ar="الرسالة">Message</label>
+                                <textarea name="message" rows="5" required data-placeholder-en="Write your message..." data-placeholder-ar="اكتب رسالتك..." placeholder="Write your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-en="Send Message →" data-ar="إرسال الرسالة →">Send Message →</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="logo">
+                <span class="logo-bracket">[</span>DCoder<span class="logo-dot">_</span><span class="logo-bracket">]</span>
+            </div>
+            <p data-en="© 2026 DCoder. All rights reserved." data-ar="© 2026 DCoder. جميع الحقوق محفوظة.">© 2026 DCoder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
